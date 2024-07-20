@@ -1,9 +1,10 @@
 import { PATH_DB } from '../constants/contacts.js';
 import fs from 'fs/promises';
+import { writeStringifiedData } from '../utils/unificate.js';
 
 export const removeAllContacts = async () => {
   try {
-    await fs.writeFile(PATH_DB, JSON.stringify([]));
+    await writeStringifiedData([]);
   } catch (error) {
     console.error('Fail to remove all contacts:', error);
   }

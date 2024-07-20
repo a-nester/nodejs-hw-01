@@ -1,9 +1,10 @@
 import { PATH_DB } from '../constants/contacts.js';
 import fs from 'fs/promises';
+import { readParsedData } from '../utils/unificate.js';
 
 export const getAllContacts = async () => {
-  const data = await fs.readFile(PATH_DB, 'utf-8');
-  return JSON.parse(data);
+  const data = await readParsedData();
+  return data;
 };
 
 console.log(await getAllContacts());
