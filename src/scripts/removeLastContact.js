@@ -1,5 +1,3 @@
-import { PATH_DB } from '../constants/contacts.js';
-import fs from 'fs/promises';
 import { readParsedData, writeStringifiedData } from '../utils/unificate.js';
 
 export const removeLastContact = async () => {

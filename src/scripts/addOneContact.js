@@ -1,6 +1,4 @@
-import { PATH_DB } from '../constants/contacts.js';
 import { createFakeContact } from '../utils/createFakeContact.js';
-import fs from 'fs/promises';
 import { readParsedData, writeStringifiedData } from '../utils/unificate.js';
 
 const addOneContact = async () => {

@@ -1,7 +1,5 @@
-import { PATH_DB } from '../constants/contacts.js';
 import { createFakeContact } from '../utils/createFakeContact.js';
 import { readParsedData, writeStringifiedData } from '../utils/unificate.js';
-import fs from 'fs/promises';
 
 export const generateContacts = async (number) => {
   const newContactsArr = Array.from({ length: number }, createFakeContact);

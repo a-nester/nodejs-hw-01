@@ -1,5 +1,3 @@
-import { PATH_DB } from '../constants/contacts.js';
-import fs from 'fs/promises';
 import { writeStringifiedData } from '../utils/unificate.js';
 
 export const removeAllContacts = async () => {
